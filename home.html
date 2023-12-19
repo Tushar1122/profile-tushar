@@ -6,12 +6,25 @@
     <title>home</title>
     
     <style>
+
+      *::selection{
+        color: aquamarine;
+      }
       
       h1{
         /* -webkit-text-fill-color: brown;
         background-color: yellowgreen; */
-        font-family: 'Poppins', sans-serif
+        font-family: 'Poppins', sans-serif;
+        text-shadow: 2px 2px 3px chartreuse;
       
+      }
+
+      h1::selection{
+        color: aquamarine;
+      }
+
+      p::selection{
+        color: aquamarine;
       }
 
       #Angular{
@@ -25,12 +38,29 @@
       }
 
       ul li{
-        list-style-type: square;
+        list-style-type: none;
         font-family: 'Roboto', sans-serif;
+
+      }
+
+      ul li::before{
+        content: "👉🏽 ";
+      }
+
+      ul li::selection{
+        color: aquamarine;
       }
 
       p{
         font-family: 'Roboto', sans-serif;
+      }
+
+      p::before{
+        content: "💻 ";
+      }
+
+      body{
+        background-image: url("paper.jpg");
       }
     </style>
    

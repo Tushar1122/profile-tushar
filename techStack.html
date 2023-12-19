@@ -7,10 +7,14 @@
 
     <style>
 
+body{
+        background-image: url("paper.jpg");
+      }
         table{
             border-collapse: collapse;
             width: auto; 
             margin-bottom: 20px;
+            box-shadow: 2px 2px 3px #000;
         }
 
         th,td{
@@ -20,9 +24,22 @@
             font-family: 'Roboto', sans-serif;
         }
 
-        h1{
-            font-family: 'Poppins', sans-serif
+        th:hover{
+            background-color: aquamarine;
         }
+
+        td:hover{
+            background-color: aquamarine;
+        }
+
+        h1{
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 2px 2px 3px chartreuse;
+        }
+
+        *::selection{
+        color: aquamarine;
+      }
     </style>
 </head>
 <body>
